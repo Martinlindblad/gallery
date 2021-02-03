@@ -1,0 +1,58 @@
+@import "./responsive.scss";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #D7D8D3;
+    z-index: 10;
+    font-family: "Rock Salt", cursive;
+    font-size: 18px;
+    @include tablet {
+        font-size: 15px;
+    }
+    @include xl-phone {
+        font-size: 12px;
+    }
+}
+
+h1 {
+    color: #D7D8D3;
+    font-size: 30px;
+    @include md {
+        font-size: 24px;
+    }
+    @include xl-phone {
+        font-size: 16px;
+    }
+}
+.welcome {
+    font-size: 72px;
+    @include md {
+        font-size: 46px;
+    }
+    @include xl-phone {
+        font-size: 26px;
+    }
+    @include md-phone {
+        font-size: 20px;
+    }
+}
+
+p {
+    z-index: 10;
+    font-size: 14px;
+    text-align: left;
+    color: #D7D8D3;
+    font-family: "Rock Salt", cursive;
+    @include xl-phone {
+        font-size: 12px;
+    }
+}
+
+a {
+    z-index: 20;
+    text-decoration: none;
+    color: #D7D8D3;
+}

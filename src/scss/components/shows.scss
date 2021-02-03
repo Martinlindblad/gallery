@@ -1,0 +1,49 @@
+@import "../standard/responsive.scss";
+.show-list {
+    background-color: #181818;
+    border-radius: 10px;
+    width: 95vw;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    left:0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    &::after {
+        content:"";
+        position: absolute;
+        bottom:0; 
+        left:0;
+        top:0;
+        right: 0;
+        background-color: #181818;
+        opacity: 0.3;
+        z-index: 0;
+        // box-shadow:
+        // inset 60px 0 120px #ed6414,  
+        // inset 60px 0 120px #a43006,  
+        // inset -60px 0 120px #fbd43d; 
+        animation: color 3s infinite alternate;
+    }
+    
+    .show {
+        padding: 20px;
+        flex-grow: 1;
+        z-index: 200;
+        .info {
+            margin: 10px 20px;
+            @include xl-phone {
+                margin: 2px 4px;
+            }
+        }
+        img {
+            height: 220px;
+            box-shadow: #d7d8d37e 0px 2px 20px 4px;
+            border: 1px solid #D7D8D3;
+            @include xl-phone {
+                height: 150px;
+            }
+        }
+    }
+}

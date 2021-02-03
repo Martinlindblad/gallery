@@ -1,0 +1,77 @@
+@import "../standard/responsive.scss";
+.season-container {
+    z-index: 1;
+    position: relative;
+    min-height: 45px;
+    width: 250px;
+    z-index: 100;
+    background-color: #d7d8d3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    @include lg-phone {
+        width: 150px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 0;
+        height: 0;
+        margin-top: -2px;
+        border-top: 5px solid #aaa;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        z-index: 0;
+    }
+    .seasons {
+        margin-bottom: 10px;
+        position: absolute;
+        width: 100%;
+
+        p {
+            z-index: 1;
+            color: #181818;
+        }
+
+        ul {
+            z-index: 1;
+            font-size: 1rem;
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            transition-delay: 0.7s;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #181818;
+            max-height: 400px;
+            overflow: auto;
+            overflow-x: hidden;
+
+            &.closed {
+                visibility: hidden;
+                height: 0;
+            }
+            &.open {
+                height: 100%;
+                visibility: initial;
+            }
+            li {
+                width: 100%;
+                text-align: center;
+                padding: 2% 0;
+                margin: 1% 0;
+                height: 20px;
+                border-bottom: #d7d8d3 1px solid;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #080618;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

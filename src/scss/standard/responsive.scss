@@ -1,0 +1,84 @@
+$breakpoint-xl: 1740px;
+$breakpoint-lg: 1600px; /*15 inch Macbook Pro*/
+$breakpoint-md: 1440px; /*13inch Macbook Pro*/
+$breakpoint-sm: 1200px;
+$breakpoint-tablet: 1024px; /*Ipad pro and smaller laptops*/
+$breakpoint-md-tablet: 870px;
+$breakpoint-sm-tablet: 768px;
+$breakpoint-xl-phone: 680px; /*Smaller tablets*/
+$breakpoint-lg-phone: 550px;
+$breakpoint-md-phone: 414px; /*Iphone 7-8+*/
+$breakpoint-sm-phone: 375px; /*Iphone X & Iphone standard sizes*/
+$breakpoint-mini: 360px; /*use this down to 320px*/
+
+@mixin xl {
+    @media screen and (max-width:$breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width:$breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width:$breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width:$breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:$breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin md-tablet {
+    @media screen and (max-width:$breakpoint-md-tablet) {
+        @content;
+    }
+}
+
+@mixin sm-tablet {
+    @media screen and (max-width:$breakpoint-sm-tablet) {
+        @content;
+    }
+}
+
+@mixin xl-phone {
+    @media screen and (max-width:$breakpoint-xl-phone) {
+        @content;
+    }
+}
+
+@mixin lg-phone {
+    @media screen and (max-width:$breakpoint-lg-phone) {
+        @content;
+    }
+}
+
+@mixin md-phone {
+    @media screen and (max-width:$breakpoint-md-phone) {
+        @content;
+    }
+}
+
+@mixin sm-phone {
+    @media screen and (max-width:$breakpoint-sm-phone) {
+        @content;
+    }
+}
+
+@mixin mini-phone {
+    @media screen and (max-width:$breakpoint-mini) {
+        @content;
+    }
+}

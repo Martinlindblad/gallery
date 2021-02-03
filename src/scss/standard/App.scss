@@ -1,0 +1,30 @@
+@import './standard.scss';
+@import './utility.scss';
+
+.App {
+  // background: #0f0c29;
+  // background: linear-gradient(-70deg, #313e46, #19293a, #28343b 100.71%);
+  // background: linear-gradient(-70deg, #0a0d0f, #07121d, #0a0d0f 100.71%);
+  background-color: #0a0a0c;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  font-family: 'Quicksand', sans-serif;
+  color: #D7D8D3;
+
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

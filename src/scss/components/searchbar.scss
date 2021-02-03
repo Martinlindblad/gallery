@@ -1,0 +1,16 @@
+.search-bar {
+    position: relative;
+    margin: 2% auto;
+    input {
+        border-radius: 5px;
+        height: 20px;
+        width: 50vw;
+        padding: 10px;
+        border: none;
+        outline: none;
+        input:focus {
+            outline:none;
+            background-color: whitesmoke;
+        }
+    }
+}
